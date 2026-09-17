@@ -1,25 +1,21 @@
-# MSIS-822-project.
-Project Title: Detection of AI-Generated Arabic Text: A Data Mining Approach
-This is the final project of the Advanced Data Analytics techniques course.
+# MSIS-822 Final Project
 
-The datasetKFUPM-JRCAI/arabic-generated-abstracts (Available on Hugging Face) were provided by the prof.
+**Student:** Wareef ALmuhammadi 
 
-The dataset is organized into different subsets based on generation methods:
-Generation Methods
-1. by_polishing - Text refinement approach where models polish existing human
-abstracts
-2. from_title - Free-form generation from paper titles only
-3. from_title_and_content - Content-aware generation using both title and paper content
+**Number:** 4840154
 
-## Methodology & Workflow
+**Course:** MSIS-822 Advanced Data Analytic Techniques  
 
-This project follows the **CRISP-DM** (Cross-Industry Standard Process for Data Mining) framework:
+## Overview
+This repository contains the code and notebooks for detecting AI-generated Arabic text using machine learning techniques on the KFUPM dataset.
 
-1. **Business & Data Understanding**: Initial loading and structural analysis of the `KFUPM-JRCAI/arabic-generated-abstracts` dataset.
-2. **Data Preprocessing & EDA**: Modular cleaning pipeline (diacritic removal, character normalization, ISRI stemming) and linguistic EDA across classes.
-3. **Feature Engineering**: Extraction of assigned stylometric features and TF-IDF/BERT embeddings after a strict 70/15/15 train/val/test split to prevent data leakage.
-4. **Modeling**: Benchmarking baseline models (Logistic Regression), tuning traditional ML classifiers (SVM, XGBoost), and training deep learning approaches (BERT/Feedforward NN).
-5. **Evaluation & Interpretation**: Assessment on the held-out test set using F1-score, ROC-AUC, and feature importance analysis.
+## Dataset
+- **Source:** [`KFUPM-JRCAI/arabic-generated-abstracts`](https://huggingface.co/datasets/KFUPM-JRCAI/arabic-generated-abstracts)
+- **Total Samples:** 8,388 abstracts across 3 generation methods (`by_polishing`, `from_title`, `from_title_and_content`).
 
-
-
+## Project Structure
+- `notebooks/`: Exploratory Data Analysis (EDA) and experimentation notebooks.
+- `scripts/`: Modular Python scripts for preprocessing and model pipelines.
+- `data/`: Raw and processed data storage.
+- `models/`: Saved model checkpoints.
+- `reports/`: Generated figures, visualizations, and project outputs.
