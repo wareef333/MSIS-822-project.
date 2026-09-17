@@ -21,5 +21,5 @@ This project follows the **CRISP-DM** (Cross-Industry Standard Process for Data 
 4. **Modeling**: Benchmarking baseline models (Logistic Regression), tuning traditional ML classifiers (SVM, XGBoost), and training deep learning approaches (BERT/Feedforward NN).
 5. **Evaluation & Interpretation**: Assessment on the held-out test set using F1-score, ROC-AUC, and feature importance analysis.
 
-the first step is eda, where i combined all dataframe into one.I asses the data using three criteria of data statistcal measure. 1. Central Tendency. 2.Dispersion / Spread 3. Shape & Distribution
+
 
